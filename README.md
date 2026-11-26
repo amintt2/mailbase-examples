@@ -63,6 +63,8 @@ A processed request answers **202**:
 Full reference: [mailbase.studio/docs/api](https://mailbase.studio/docs/api) ·
 Quickstart: [mailbase.studio/docs/send-transactional-email](https://mailbase.studio/docs/send-transactional-email)
 
+> **Transactional-first endpoint:** Mailbase also exposes `POST https://mailbase.studio/api/v1/emails`, which is transactional by default and adds `from`, `reply_to`, `cc`, `bcc`, custom `headers`, and base64 `attachments`. `/api/v1/send` remains fully supported.
+
 ## Before you run them
 
 1. Create a Mailbase workspace and verify a sending domain (Settings → Domains & health).
@@ -83,7 +85,8 @@ Free plan: 200 emails a month, no card. Sending from your own verified domain on
 plan needs a verified card (nothing is charged) and allows 3,000 emails a month.
 Paid plans, billed yearly: Starter €9/month for 50,000 emails a month, Growth €29/month for
 100,000, Scale €79/month for 300,000 (excl. VAT).
-Details: [mailbase.studio/features/transactional-email](https://mailbase.studio/features/transactional-email).
+Details: [mailbase.studio/features/transactional-email](https://mailbase.studio/features/transactional-email) ·
+Compare monthly volume costs: [Email API pricing calculator](https://mailbase.studio/tools/email-api-pricing-calculator).
 
 ## Related
 
